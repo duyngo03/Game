@@ -21,9 +21,10 @@ void Bird::HandleInputAction(SDL_Event events, SDL_Renderer* screen)
         {
             if (is_falling_ == false)
             {
-                y_val_ = -5;
+                y_val_ = -10;
             }
         }
+        break;
         }
     }
     else if (events.type == SDL_KEYUP)

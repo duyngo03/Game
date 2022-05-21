@@ -19,11 +19,13 @@ public:
 	void SetFalling(bool falling) { is_falling_ = falling; }
 	void DoGround(SDL_Renderer* screen);
 	bool GetIsDie() const { return is_die_; }
+
+	void Render(SDL_Renderer* ren);
 private:
 	bool is_falling_;
-	float x_val_;
 	float y_val_;
 	bool is_die_;
+
 };
 
 

@@ -1,12 +1,2 @@
-﻿  CommonFunction.cpp
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(13,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(14,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(47,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(48,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(49,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(50,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(136,91): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(136,64): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(137,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-D:\VS Studio\Game_Flappy_Bird\Game_Flappy_Bird\CommonFunction.cpp(29,18): warning C4101: 'menu': unreferenced local variable
+﻿  main.cpp
   Game_Flappy_Bird.vcxproj -> D:\VS Studio\Game_Flappy_Bird\x64\Debug\Game_Flappy_Bird.exe

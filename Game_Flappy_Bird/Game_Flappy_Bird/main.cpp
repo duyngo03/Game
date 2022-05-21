@@ -116,10 +116,10 @@ int main(int argc, char* argv[])
 again_game: //play_again
 
     Text text_count_;
-    text_count_.setColor(Text::WHITE_TEXT);
+    text_count_.setColor(255, 255, 255); // màu điểm
 
     Bird player;
-    ret = player.LoadImg(".\\img\\chim.png", g_screen);
+    ret = player.LoadImg(".\\img\\bird.png", g_screen);
     player.SetRect(100, 100);
     if (ret == false) return -1;
 

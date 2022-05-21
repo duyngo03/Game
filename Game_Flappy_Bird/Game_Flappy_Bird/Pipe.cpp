@@ -145,8 +145,6 @@ bool PipeInit::CheckCol(SDL_Rect pl_rect)
     return false;
 }
 
-//Block manager
-
 PipeManager::PipeManager()
 {
     xp_max_ = 0;

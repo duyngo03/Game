@@ -48,24 +48,6 @@ void Text::setColor(Uint8 red, Uint8 green, Uint8 blue)
     text_color_.b = blue;
 }
 
-void Text::setColor(int type)
-{
-    if (type == RED_TEXT)
-    {
-        SDL_Color color = { 255, 255, 0 };
-        text_color_ = color;
-    }
-    else if (type == WHITE_TEXT)
-    {
-        SDL_Color color = { 255, 255, 255 };
-        text_color_ = color;
-    }
-    else
-    {
-        SDL_Color color = { 0, 0, 0 };
-        text_color_ = color;
-    }
-}
 void Text::RenderText(SDL_Renderer* screen, int x, int y, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip)
 {
     //Set rendering space and render to screen

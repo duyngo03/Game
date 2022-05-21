@@ -8,13 +8,6 @@ public:
     Text(void);
     ~Text(void);
 
-    enum TextColor
-    {
-        RED_TEXT = 0,
-        WHITE_TEXT = 1,
-        BLACK_TEXT = 2,
-    };
-
     bool loadFromRenderedText(TTF_Font* gFont, SDL_Renderer* screen);
     void Free();
 
