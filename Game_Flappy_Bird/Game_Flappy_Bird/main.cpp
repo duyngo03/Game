@@ -114,6 +114,7 @@ int main(int argc, char* argv[])
     g_ground.SetRect(0, GROUND_MAP);
 
     int count_again = 0;
+    int max = 0;
 
 again_game: //play_again
 
@@ -184,6 +185,22 @@ again_game: //play_again
         text_count_.SetText(count_again_str);
         text_count_.loadFromRenderedText(g_font_text, g_screen);
         text_count_.RenderText(g_screen, SCREEN_WIDTH / 2, 10);
+
+        if (max < score)
+        {
+            max = score;
+        }
+
+        Text HighScore,text_high_score;
+        text_high_score.setColor(255, 255, 255);
+        HighScore.setColor(255, 255, 255);
+        HighScore.SetText("HighScore:");
+        std::string max_score = std::to_string(max);
+        text_high_score.SetText(max_score);
+        HighScore.loadFromRenderedText(g_font_text, g_screen);
+        text_high_score.loadFromRenderedText(g_font_text, g_screen);
+        HighScore.RenderText(g_screen, 550, 10);
+        text_high_score.RenderText(g_screen, 750, 10);
 
         g_ground.Render(g_screen);
         SDL_RenderPresent(g_screen);
