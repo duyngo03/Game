@@ -114,9 +114,8 @@ int SDLCommonFunction::ShowMenu(SDL_Renderer* g_screen, TTF_Font* font,
             pos[0].y = SCREEN_HEIGHT * 0.8 - 40;
             pos[1].x = SCREEN_WIDTH * 0.3 - 150;
             pos[1].y = SCREEN_HEIGHT * 0.8 + 40;
-
             gBackground.SetRect(SCREEN_WIDTH / 3, SCREEN_HEIGHT / 3);
-            bool ret = gBackground.LoadImageFile(img_file, g_screen);
+            bool ret1 = gBackground.LoadImageFile(img_file, g_screen);
             Text text_count_, text_score;
             text_count_.setColor(0, 0, 0);
             text_score.setColor(0, 0, 0);
@@ -132,8 +131,8 @@ int SDLCommonFunction::ShowMenu(SDL_Renderer* g_screen, TTF_Font* font,
         {
             pos[0].x = 340;
             pos[0].y = 515;
-            pos[1].x = SCREEN_WIDTH * 0.3 - 150;
-            pos[1].y = SCREEN_HEIGHT * 0.8 + 40;
+            pos[1].x = 360;
+            pos[1].y = 565;
             bool ret = gBackground.LoadImageFile(img_file, g_screen);
         }
 

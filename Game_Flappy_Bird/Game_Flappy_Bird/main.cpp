@@ -113,10 +113,12 @@ int main(int argc, char* argv[])
     }
     g_ground.SetRect(0, GROUND_MAP);
 
+    int count_again = 0;
+
 again_game: //play_again
 
     Text text_count_;
-    text_count_.setColor(255, 255, 255); // màu điểm
+    text_count_.setColor(255, 255, 255); 
 
     Bird player;
     ret = player.LoadImg(".\\img\\bird.png", g_screen);
@@ -167,15 +169,24 @@ again_game: //play_again
         player.DoFalling(g_screen);
         player.Show(g_screen);
 
+        Text text_count_again,again;
+        again.setColor(255, 255, 255);
+        std::string count_str = std::to_string(count_again);
+        text_count_again.SetText(count_str);
+        again.SetText("AGAIN: ");
+        text_count_again.loadFromRenderedText(g_font_text, g_screen);
+        text_count_again.RenderText(g_screen, 130, 10);
+        again.loadFromRenderedText(g_font_text, g_screen);
+        again.RenderText(g_screen, 10, 10);
+        
         int score = manage_pipe.GetCount();
-        std::string count_str = std::to_string(score);
-        text_count_.SetText(count_str);
+        std::string count_again_str = std::to_string(score);
+        text_count_.SetText(count_again_str);
         text_count_.loadFromRenderedText(g_font_text, g_screen);
         text_count_.RenderText(g_screen, SCREEN_WIDTH / 2, 10);
 
         g_ground.Render(g_screen);
         SDL_RenderPresent(g_screen);
-
 
 
         // Menu END
@@ -196,6 +207,7 @@ again_game: //play_again
                 game_over = false;
                 player.Free();
                 manage_pipe.FreePipe();
+                count_again ++;
                 goto again_game;
             }
         }
