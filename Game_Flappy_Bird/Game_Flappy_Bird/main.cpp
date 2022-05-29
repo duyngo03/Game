@@ -170,6 +170,8 @@ again_game: //play_again
         player.DoFalling(g_screen);
         player.Show(g_screen);
 
+        
+        //in chữ
         Text text_count_again,again;
         again.setColor(255, 255, 255);
         std::string count_str = std::to_string(count_again);
