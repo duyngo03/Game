@@ -24,4 +24,4 @@
 * Sử dụng "vector" để tạo các ống nước 
 * Sử dụng thư viện đồ họa SDL
 # **demo game**
-[link](https://youtu.be/6FpswfMrgEA)
+[link](https://www.youtube.com/watch?v=G-GfY6ht--w)
